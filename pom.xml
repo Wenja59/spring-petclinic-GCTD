@@ -257,8 +257,6 @@
         <groupId>org.cyclonedx</groupId>
         <artifactId>cyclonedx-maven-plugin</artifactId>
       </plugin>
-
-    </plugins>
     			<!-- jacoco -->
 			<plugin>
 			  <groupId>org.jacoco</groupId>
@@ -279,6 +277,8 @@
 			    </execution>
 			  </executions>
 			</plugin>
+
+    </plugins>
   </build>
 
   <licenses>
