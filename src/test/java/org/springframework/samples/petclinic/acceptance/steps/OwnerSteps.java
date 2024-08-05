@@ -131,26 +131,32 @@ public class OwnerSteps {
 	public void goToFindOwner() {
 		site.navBar.findOwners();
 	}
+
 	@Then("el sistema debería dirigir a la pantalla de informacion del dueño")
 	public void owmerInfoCheckTitle() {
 		site.navBar.checkTitle(OWNER_DETAILS_TITLE);
 	}
+
 	@When("el veterinario hace clic en el botón Find Owner")
 	public void findOwner() {
 		site.ownerList.findOwner();
 	}
+
 	@When("el veterinario hace clic en el botón Edit Owner")
 	public void editOwner() {
 		site.ownerDetails.editOwners();
 	}
+
 	@Then("el sistema debería dirigir a la pantalla de detalles del dueño de mascota")
 	public void owmerCheckTitle() {
 		site.navBar.checkTitle(OWNER_FORM_TITLE);
 	}
+
 	@When("el veterinario hace clic en el botón Update Owner")
 	public void updateOwner() {
 		site.ownerDetails.updateOwners();
 	}
+
 	@Then("el veterinario vacía el campo City")
 	public void deleteCity() {
 		site.ownerDetails.checkCity("");
@@ -161,5 +167,4 @@ public class OwnerSteps {
 		site.ownerDetails.checkTelephone("");
 	}
 
-	
 }

@@ -75,7 +75,7 @@ public class OwnerDetails {
 	public void editOwners() {
 		this.browser.click(BTN_EDIT_OWNER);
 	}
-	
+
 	public void updateOwners() {
 		this.browser.click(BTN_UPDATE_OWNER);
 	}
