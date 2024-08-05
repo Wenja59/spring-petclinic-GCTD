@@ -21,6 +21,10 @@ public class OwnerDetails {
 
 	private static final String TELEPHONE_ROW_TITLE = "Telephone";
 
+	private static String BTN_EDIT_OWNER = "xpath://*[contains(normalize-space(text()), 'Edit Owner')]";
+
+	private static String BTN_UPDATE_OWNER = "xpath://button[contains(normalize-space(text()), 'Update Owner')]";
+
 	private final Browser browser;
 
 	@Autowired
@@ -66,6 +70,14 @@ public class OwnerDetails {
 
 	public void checkTelephone(String expected) {
 		assertThat(this.getTelephone()).isEqualTo(expected);
+	}
+
+	public void editOwners() {
+		this.browser.click(BTN_EDIT_OWNER);
+	}
+	
+	public void updateOwners() {
+		this.browser.click(BTN_UPDATE_OWNER);
 	}
 
 }
